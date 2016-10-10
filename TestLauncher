@@ -1,0 +1,11 @@
+#!/bin/bash -x
+gnome-terminal -e "node server.js" &
+xdg-open vis.wrl &&
+javac -cp /opt/instantReality/bin/instantreality.jar:/Gottox/jar/socketio.jar:. EAISocket.java &&
+java -cp /opt/instantReality/bin/instantreality.jar:/Gottox/jar/socketio.jar:. EAISocket
+
+#server_pid=$!
+
+#wait $server_pid
+
+#echo "Hi"
